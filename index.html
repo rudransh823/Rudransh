@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rudra.tik | Creative Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background: radial-gradient(circle at top left,#0f0f0f,#050505 60%);
+color:white;
+overflow-x:hidden;
+}
+
+/* Liquid Glow Background */
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+left:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#A855F7,transparent 60%);
+filter:blur(120px);
+z-index:-1;
+animation:move1 10s infinite alternate ease-in-out;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-200px;
+right:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#00F5FF,transparent 60%);
+filter:blur(120px);
+z-index:-1;
+animation:move2 12s infinite alternate ease-in-out;
+}
+
+@keyframes move1{
+from{transform:translate(0,0);}
+to{transform:translate(100px,50px);}
+}
+
+@keyframes move2{
+from{transform:translate(0,0);}
+to{transform:translate(-100px,-50px);}
+}
+
+section{
+padding:120px 10%;
+}
+
+h1{
+font-size:70px;
+font-weight:800;
+background:linear-gradient(90deg,#A855F7,#00F5FF,#FF2E92);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+h2{
+font-size:42px;
+margin-bottom:40px;
+}
+
+p{
+opacity:0.8;
+line-height:1.6;
+}
+
+/* Glass Card */
+.glass{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(20px);
+border-radius:25px;
+padding:40px;
+transition:0.4s ease;
+}
+
+.glass:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px rgba(168,85,247,0.4);
+}
+
+/* Hero */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border-radius:50px;
+border:none;
+background:linear-gradient(90deg,#A855F7,#FF2E92);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #A855F7;
+}
+
+/* Services */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* Portfolio */
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.portfolio div{
+height:220px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+}
+
+/* Contact */
+.contact{
+text-align:center;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+color:white;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<h1>rudra.tik</h1>
+<p>Luxury Video Editing & 3D Visual Agency  
+Crafting Cinematic Experiences That Convert</p>
+<button class="btn">View Portfolio</button>
+</section>
+
+<section>
+<h2>About Agency</h2>
+<div class="glass">
+<p>rudra.tik is a premium creative studio specializing in high-end video editing, cinematic storytelling, and Blender 3D modeling. We design visuals that feel expensive, bold and unforgettable.</p>
+</div>
+</section>
+
+<section>
+<h2>Services</h2>
+<div class="services">
+<div class="glass">
+<h3>Video Editing</h3>
+<p>Luxury reels, YouTube content, brand films & commercial storytelling.</p>
+</div>
+
+<div class="glass">
+<h3>Blender 3D Modelling</h3>
+<p>Product visuals, motion graphics, VFX shots & cinematic 3D scenes.</p>
+</div>
+
+<div class="glass">
+<h3>More Services</h3>
+<p>Add motion graphics, ad creatives, thumbnails, brand identity & more.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Selected Work</h2>
+<div class="portfolio">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</section>
+
+<section class="contact">
+<h2>Let’s Build Something Iconic</h2>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Tell us about your project"></textarea>
+<button class="btn">Send Message</button>
+</section>
+
+<footer>
+© 2026 rudra.tik Creative Agency
+</footer>
+
+</body>
+</html>
